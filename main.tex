@@ -168,16 +168,36 @@ p
 \gamma&=\frac{E m}{E^{2}-p^{2}}
 \end{align*}
 
-in an abitrary reference frame, $m^{2}=E^{2}-\vec{p}^{2}$ is the lorentz invariant  mass squared.
+in an abitrary reference frame, $m^{2}=E^{2}-\vec{p}\;^{2}$ is the lorentz invariant  mass squared.
 
 \subsection{}
 \textit{A particle has four-momentum $p=(4.0,0.0,0.0,2.5315) \mathrm{GeV} .$ What is the mass of a particle? What particle is this?}
+
+\begin{align*}
+    m&=\sqrt{p^{\mu} p_{\mu}}\\
+    &=\sqrt{9.59151 \mathrm{GeV}^{2}}\\
+    &=3.097 \text { GeV }
+\end{align*}
+
+this is the $J/\Psi$ meson, with mass 3.0969 GeV.
 
 \newpage
 
 
 \section{Decay of a free photon?}
 \textit{Using relativity, show that the process $\gamma \rightarrow e^{+} e^{-}$ cannot occur in the vacuum. Here the photon is a free particle, not a virtual photon. Your argument should be mathematical, not just verbal.}
+
+In the center of momentum frame
+$$
+\vec{p}_{\text {tot }}=\vec{p}_{\gamma}=\vec{p_1}+\vec{p_2}=0
+$$
+but that implies
+$$
+\vec{p}_{\gamma}=0
+$$
+and the energy of the photon $E_{\gamma} = \left|\vec{p}_\gamma\right|$ imply that in the CM frame of the photon it has $E_\gamma = 0$.
+
+
 
 \newpage
 
@@ -188,16 +208,53 @@ in an abitrary reference frame, $m^{2}=E^{2}-\vec{p}^{2}$ is the lorentz invaria
 \subsection{}
 \textit{The identity element of $G$ is unique.}
 
+\begin{proof}
+From the group axioms,
+$$
+\exists e \in G \; \text {such that} \forall a \in G \quad e \cdot a=a \cdot e=a
+$$
+Suppose $\exists f \in G \; \text {such that} \forall a \in G \quad f \cdot a=a \cdot f=a$. Let $a = e$ and determine 
+\begin{align*}
+    f \cdot e  &= e \cdot f  \\
+    f  &=  e \cdot f \\
+    f &=e
+\end{align*}
+$\therefore$ The identity $e$ is unique.
+\end{proof}
+
+
 \subsection{}
 \textit{Every element $a \in G$ has a unique inverse in $G$.}
+
+\begin{proof}
+Suppose $\forall a \in G \; \exists (b,c) \in G \; \text {such that} $
+$$
+a \cdot b=b \cdot a=a \cdot c=c \cdot a=e
+$$
+This implies 
+\begin{align*}
+a \cdot b &= a \cdot c \\
+(b \cdot a) \cdot b &= (b\cdot a) \cdot c \\
+e \cdot b &= e \cdot c \\
+b &= c
+\end{align*}
+$\therefore$ the inverse $b$ is unique.
+\end{proof}
 
 \newpage
 
 
 \section{Kinematics of scattering in a fixed-target experiment.}
 \textit{A beam of particles with mass $M_{A}$ and energy $E_{A}$ is incident on a target containing particles of mass $M_{B}$ at rest, resulting in the process $A+B \rightarrow$ $1+2+\ldots+N .$ The final-state particles have masses $m_{1}, m_{2}, \ldots, m_{N}$}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/problem_5.png}
+    \label{fig:my_label}
+\end{figure}
 \subsection{}
 \textit{True or false: $M_{A}+M_{B}=m_{1}+m_{2}+\ldots+m_{N} .$ If true, explain why. If not, give an alternative statement.}
+
 
 \subsection{}
 \textit{Compute the minimum value of the energy of particle $\mathrm{A}, E=E_{A}^{\min },$ for the process to be kinematically allowed.}
