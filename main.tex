@@ -583,11 +583,40 @@ $$
 y^{\prime}=y+\frac{1}{2} \ln \frac{1-\beta}{1+\beta}
 $$}
 
+\begin{align*}
+    y&=\frac{1}{2} \ln \frac{E+p_{z}}{E-p_{z}}\\
+    y^{\prime}&= \frac{1}{2} \ln \frac{\gamma E-\beta \gamma p_z+\gamma p_{z}-\beta \gamma E}{\gamma E-\beta \gamma p_{z}-\gamma p_{z}+\beta \gamma E}\\
+    &= \frac{1}{2} \ln \frac{E-\beta p_{z}+p_{z}-\beta E}{E+\beta E-\beta p_{z}-p_{z}}\\
+    &= \frac{1}{2} \ln \frac{\left(E+p_{z}\right)(1-\beta)}{\left(E-p_{z}\right)(1+\beta)}\\
+    &= \frac{1}{2} \ln \frac{E+P_{z}}{E-P_{z}}+\ln \sqrt{\frac{1-\beta}{1+\beta}}\\
+\end{align*}
 
+$$\boxed{y^{\prime}=y+\ln \sqrt{\frac{1-\beta}{1+\beta}}}$$
+
+
+\begin{align*}
+    \Delta y&=y_{2}-y_{1}=\frac{1}{2} \ln \frac{\left(E_{2}+p_{2}\right)\left(E_{1}-p_{1}\right)}{\left(E_{2}-p_{2}\right)\left(E_{1}+p_{1}\right)}\\
+    \Delta y^\prime&=y^\prime_{2}-y^\prime_{1}\\
+    &= \left(y_{2}+\ln \sqrt{\frac{1-\beta}{1+\beta}}\right)-\left(y_1+\ln \sqrt{\frac{1-\beta}{1+\beta}}\right)\\
+    &=y_{2}-y_{1}\\
+    &= \Delta y
+\end{align*}
+
+\newpage
 \subsection{}
 \textit{Consider the case in which the mass of the particle (or, as is often the case, the jet) is ignored and take $p_{z} \approx E \cos \theta .$ Under this assumption show that $y$ can be approximated by the pseudorapidity
 $$
 \eta=-\ln \left(\tan \frac{\theta}{2}\right)
-$$}d
+$$}
+
+Using $p_{z} \approx E \cos \theta$, 
+\begin{align*}
+    y &\approx \frac{1}{2} \ln \frac{E(1+\cos \theta)}{E(1-\cos \theta)}\\
+    &=\frac{1}{2} \ln \frac{1+\cos \theta}{1-\cos \theta}\\
+    &=\frac{1}{2} \ln \frac{\cos ^{2} \frac{\theta}{2}}{\sin ^{2} \frac{\theta}{2}}\\
+    &=\frac{1}{2} \ln \cot ^{2} \frac{\theta}{2}\\
+    &=-\frac{1}{2} \ln \tan ^{2} \frac{\theta}{2}\\
+    &=-\ln \tan \frac{\theta}{2}
+\end{align*}
 
 \end{document}
